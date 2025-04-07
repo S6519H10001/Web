@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAU Hotel - Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            text-align: left;
+            background-color: #f9f9f9;
+        }
+        .container img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        h2, h3 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            margin: 10px 0;
+        }
+        td {
+            padding: 8px;
+            vertical-align: middle;
+        }
+        input[type="text"], input[type="date"], select {
+            width: 80%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .buttons input {
+            padding: 8px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-save {
+            background-color: #dae3db;
+            color: black;
+        }
+        .btn-cancel {
+            background-color: #dae3db;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="images/img2.png" alt="SAU HOTEL">
+    
+    <h2>SAU Hotel</h2>
+    <h3>Register</h3>
+
+    <table>
+        <tr>
+            <td>ชื่อ-สกุล:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>คำนำหน้า:</td>
+            <td>
+                <input type="radio" name="prefix"> นาย
+                <input type="radio" name="prefix"> นาง
+                <input type="radio" name="prefix"> นางสาว
+            </td>
+        </tr>
+        <tr>
+            <td>ประเภทห้อง:</td>
+            <td>
+                <select>
+                    <option>Standard Room (750 บาท/คืน)</option>
+                    <option>Superior (1050 บาท/คืน)</option>
+                    <option>Deluxe (1500 บาท/คืน)</option>
+                    <option>Suite (5000 บาท/คืน)</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>จำนวนคืนที่เข้าพัก:</td>
+            <td><input type="text"> คืน</td>
+        </tr>
+        <tr>
+            <td>จำนวนคนที่เข้าพัก:</td>
+            <td><input type="text"> คืน</td>
+        </tr>
+        <tr>
+            <td>วันที่เข้าพัก:</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Option:</td>
+            <td>
+                <input type="checkbox"> อาหารเช้า<br>
+                <input type="checkbox"> อาหารกลางวัน<br>
+                <input type="checkbox"> อาหารค่ำ
+            </td>
+        </tr>
+    </table>
+
+    <div class="buttons">
+        <input type="submit" value="บันทึกข้อมูล" class="btn-save">
+        <input type="reset" value="ยกเลิก" class="btn-cancel">
+    </div>
+</div>
+
+</body>
+</html>
